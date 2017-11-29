@@ -19,10 +19,10 @@ public class WriterThread extends Thread {
     @Override
     public void run() {
         while (true) {
-            while (counter.threadSequence != threadId) {
+            while (counter.getThreadSequence() != threadId) {
             }
             System.out.println(text);
-            counter.threadSequence++;
+            counter.incrementThreadSequence();
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {

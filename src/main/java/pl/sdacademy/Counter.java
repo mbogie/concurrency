@@ -6,6 +6,19 @@ package pl.sdacademy;
  */
 public class Counter {
 
-    public int threadSequence;
+    private int threadSequence;
+    private int threadCount;
+
+    public Counter(int threadCount) {
+        this.threadCount = threadCount;
+    }
+
+    public int getThreadSequence() {
+        return threadSequence;
+    }
+
+    public void incrementThreadSequence() {
+        threadSequence = (threadSequence + 1) % threadCount;
+    }
 
 }

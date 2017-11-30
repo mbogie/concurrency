@@ -1,4 +1,4 @@
-package pl.sdacademy;
+package pl.sdacademy.example03;
 
 /**
  * http://dominisz.pl
@@ -6,7 +6,7 @@ package pl.sdacademy;
  */
 public class Counter {
 
-    private int threadSequence;
+    private volatile int threadSequence;
     private int threadCount;
 
     public Counter(int threadCount) {

@@ -1,10 +1,10 @@
-package pl.sdacademy;
+package pl.sdacademy.example03;
 
 /**
  * Hello world!
  *
  */
-public class App {
+public class Example03 {
 
     public static void main( String[] args ) throws InterruptedException {
         Counter counter = new Counter(3);

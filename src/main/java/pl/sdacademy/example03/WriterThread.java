@@ -1,4 +1,4 @@
-package pl.sdacademy;
+package pl.sdacademy.example03;
 
 /**
  * http://dominisz.pl

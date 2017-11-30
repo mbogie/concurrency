@@ -20,6 +20,11 @@ class Consumer extends Thread {
             int element = buffer.get();
             freeSpace.release();
             System.out.println("Z bufora pobrano " + element);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 

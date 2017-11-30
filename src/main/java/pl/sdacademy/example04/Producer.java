@@ -23,6 +23,11 @@ class Producer extends Thread {
             buffer.put(element);
             elements.release();
             System.out.println("Do bufora wstawiono " + element);
+            try {
+                Thread.sleep(600);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 

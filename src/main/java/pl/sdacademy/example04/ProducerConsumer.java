@@ -4,7 +4,7 @@ import java.util.concurrent.Semaphore;
 
 public class ProducerConsumer {
 
-    private static final int BUFFER_SIZE = 100;
+    private static final int BUFFER_SIZE = 5;
 
     public static void main(String[] args) {
         Semaphore elements = new Semaphore(0);

@@ -12,7 +12,6 @@ class Buffer {
     public void put(int element) {
         buffer[count] = element;
         count++;
-        System.out.println("Do bufora wstawiono " + element);
     }
 
     public int get() {

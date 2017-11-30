@@ -18,10 +18,11 @@ class Consumer extends Thread {
         while (true) {
             elements.acquireUninterruptibly();
             int element = buffer.get();
-            freeSpace.release();
             System.out.println("Z bufora pobrano " + element);
+            freeSpace.release();
+
             try {
-                Thread.sleep(1000);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

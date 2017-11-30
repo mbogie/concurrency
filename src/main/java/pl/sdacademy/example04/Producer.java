@@ -21,10 +21,11 @@ class Producer extends Thread {
             int element = random.nextInt(1000);
             freeSpace.acquireUninterruptibly();
             buffer.put(element);
-            elements.release();
             System.out.println("Do bufora wstawiono " + element);
+            elements.release();
+
             try {
-                Thread.sleep(600);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
